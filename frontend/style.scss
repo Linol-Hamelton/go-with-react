@@ -1,3 +1,107 @@
-* {
-  margin: 0;
+$container-item-background: #F7F7F7;
+$container-item-font-size: 1em;
+
+$chart-section-margin: 20px;
+$chart-item-width: calc(100% / 4);
+$chart-item-min-width: 60%;
+$chart-item-max-width: 90%;
+$chart-item-background: #ffffff;
+$chart-item-border: 2px #e5e5e5;
+$chart-item-box-shadow: 0px 0px 10px 3px #e5e5e5;
+$chart-item-padding: 1em;
+$chart-item-margin: 1em;
+$chart-item-cursor: pointer;
+$chart-item-border-radius: 1em;
+$chart-item-font-size: 1em;
+$chart-item-text-align: left;
+$chart-item-line-height: 140%;
+
+$preset-item-background: #ffffff;
+$preset-item-border: 2px #e5e5e5;
+$preset-item-box-shadow: 0px 0px 10px 3px #e5e5e5;
+$preset-item-padding: 1em;
+$preset-item-margin: 1em;
+$preset-item-max-width: 80%;
+$preset-item-cursor: pointer;
+$preset-item-border-radius: 1em;
+$preset-item-font-size: 1em;
+$preset-item-text-align: left;
+$preset-item-line-height: 140%;
+
+$header-item-color: #ffffff;
+$header-item-font-size: 2em;
+$header-item-font-weight: 500;
+$header-item-text-align: center;
+$header-item-margin-top: 5%;
+$header-item-margin-bottom: 5%;
+$header-item-padding: 2%;
+$header-item-background: #36A2EB;
+$header-item-max-height: 100%;
+$header-item-border-radius: 1em;
+$header-item-min-width: 60%;
+$header-item-max-width: 80%;
+
+.containerItem {
+  background: $container-item-background;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Helvetica';
+  font-size: $container-item-font-size;
+}
+
+.chartSection {
+  display: flex;
+  margin: $chart-section-margin;
+  justify-content: center;
+}
+
+.chartItem {
+  width: $chart-item-width;
+  min-width: $chart-item-min-width;
+  max-width: $chart-item-max-width;
+  list-style-type: none;
+  background: $chart-item-background;
+  border: $chart-item-border;
+  box-shadow: $chart-item-box-shadow;
+  padding: $chart-item-padding;
+  margin: $chart-item-margin;
+  cursor: $chart-item-cursor;
+  border-radius: $chart-item-border-radius;
+  font-family: 'Helvetica';
+  font-weight: 400;
+  font-size: $chart-item-font-size;
+  text-align: $chart-item-text-align;
+  line-height: $chart-item-line-height;
+}
+
+.presetItem {
+  background: $preset-item-background;
+  border: $preset-item-border;
+  box-shadow: $preset-item-box-shadow;
+  padding: $preset-item-padding;
+  margin: $preset-item-margin;
+  max-width: $preset-item-max-width;
+  cursor: $preset-item-cursor;
+  border-radius: $preset-item-border-radius;
+  font-family: 'Helvetica';
+  font-weight: 400;
+  font-size: $preset-item-font-size;
+  text-align: $preset-item-text-align;
+  line-height: $preset-item-line-height;
+}
+
+.hederItem {
+  color: $header-item-color;
+  font-size: $header-item-font-size;
+  font-weight: $header-item-font-weight;
+  text-align: $header-item-text-align;
+  margin-top: $header-item-margin-top;
+  margin-bottom: $header-item-margin-bottom;
+  padding: $header-item-padding;
+  background: $header-item-background;
+  max-height: $header-item-max-height;
+  border-radius: $header-item-border-radius;
+  min-width: $header-item-min-width;
+  max-width: $header-item-max-width;
 }
