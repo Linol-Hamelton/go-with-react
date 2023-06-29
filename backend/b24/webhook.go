@@ -1,13 +1,12 @@
-package main
+package webhook
 
 import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"go-with-react/backend/dates"
 	"io/ioutil"
 	"net/http"
-
-	"./dates"
 )
 
 func bxPostJson(method string, params interface{}) (map[string]interface{}, error) {
